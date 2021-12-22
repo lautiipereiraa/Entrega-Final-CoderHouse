@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+New:wght@300&display=swap");
+/*- tipografia font-family: 'Zen Antique Soft', serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif; -*/
+* {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  list-style-type: none;
+  font-size: medium;
+}
+
+/*- color de fondo -*/
+body {
+  background-color: #f5f5dc;
+}
+
+/*-nav y header-*/
+nav {
+  border-bottom: 1px solid black;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+header ul {
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*- animacion del nav -*/
+header ul li a:hover {
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*- propiedades del carrousel -*/
+.tamanioCarrousel {
+  width: 90%;
+  height: 90%;
+  background-color: #f5f5dc;
+  margin: auto;
+}
+
+/*- propiedades de la pagina -*/
+h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.centroCompania {
+  text-align: center;
+}
+
+.logoFooter {
+  width: 15px;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+footer ul {
+  float: right;
+  margin: 10px;
+}
+
+.nolink {
+  text-decoration: none;
+}
+
+.tamanioPago {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.xxlargo {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.posicionObjetos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: auto;
+  height: auto;
+}
+
+.fotoTrabajos {
+  width: 300px;
+  height: 300px;
+  margin: 2rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.tamanioFont {
+  font-size: 20px;
+}
+
+.fotoTrabajos:hover {
+  width: 350px;
+  height: 350px;
+}
+
+.aparecer {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  text-align: center;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.marginBottom {
+  margin-bottom: 50px;
+}
+
+.marginTop {
+  margin-top: 50px;
+}
+
+.center {
+  margin: 0 auto !important;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 400px 400px 400px;
+      grid-template-columns: 400px 400px 400px 400px;
+  -ms-grid-rows: 400px 400px;
+      grid-template-rows: 400px 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.completar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form {
+  background-color: #f5f5dc;
+  padding: 1.7em 2em;
+  min-width: 400px;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-bottom: 1em;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .1em;
+}
+
+label > span.required {
+  color: var(--clr-accent);
+  font-size: 1.5rem;
+}
+
+.input-group > p,
+.input-group > label {
+  font-weight: 600;
+  margin-bottom: .3em;
+}
+
+input,
+textarea,
+select,
+option {
+  font-family: "Poppins", sans-serif;
+  padding: .5em;
+  border-radius: .3em;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 7em;
+}
+
+label > input {
+  margin-right: .5em;
+}
+
+.btn {
+  background: var(--clr-accent);
+  margin: .5em auto 0;
+  padding: .7em 1.4em;
+  border-radius: .3em;
+  border: none;
+  -webkit-box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ubicacion {
+  font-size: 30px;
+  text-align: center;
+}
+
+.footer_logo {
+  width: 20px;
+}
+
+.footer_redes {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+
+.footer_redes:hover {
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+
+.centrarUbicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.centrarLetra {
+  text-align: center;
+  font-size: 40px;
+}
+
+.tamanioLogosPagos {
+  width: auto;
+  height: auto;
+}
+
+.tamanioNav {
+  margin: 1rem;
+  padding: 1rem;
+  float: left;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.logo {
+  float: right;
+}
+/*# sourceMappingURL=estilos.css.map */
